@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         section .menu
+        {
+            /* width: 100%;
+            height: 100vh; */
+            display: flex;
+            justify-content: space-around;
+            box-sizing: border-box;
+            box-shadow: 2px 3px 10px black;
+        }
+        section .logo img
+        {
+            width:200% ;
+            height: 10vh;
+        }
+        section .menu ul
+        {
+            list-style: none;
+        
+        }
+        section .menu ul li
+        {
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        section .menu ul li a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        section .menu ul li a:hover
+        {
+            color: rgb(25, 25, 240);
+            background: yellow;
+            border-radius: 6px;
+            transition: 1s linear;
+        } 
+        section .menu .icon i
+        {          
+            font-size: 20px;
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+        section .menu .icon i:hover                        
+        {
+            color: rgb(245, 182, 22);
+            transition: 0.5s;
+            cursor: pointer;
+        }                                               
+        section .main
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 80px;
+        }
+        section .main .main_text
+        {                                                                                                                          
+            font-size: 25px;
+        }
+        section .main .main_text span
+        {
+            color: gold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        section .main .main_img img
+        {
+            width: 170%;
+            position: relative;
+            right: 80px;
+        }
+        section p
+        {
+            width: 40%;
+            position: relative;
+            left: 167px; 
+            bottom: 50px;
+            text-align: justify;
+        }
+        section .main_btn
+        {
+            background-color: rgb(255, 187, 0);
+            position: relative;
+            left: 167px;
+            bottom: 30px;
+            width: 100px;
+            cursor:pointer;
+            padding: 12px 25px;
+        }
+        section .main_btn a
+        {
+            color: white;
+            text-decoration: none;
+            
+        }
+        section .main_btn i
+        {
+            color: white;
+            /* text-decoration: none; */
+            transition:0.3s ; 
+        }/* isme jo right angle hai wo aage piche hota hai with tansition in above but nhi ho rha ..........doubt */
+
+
+
+
+
+
+
+        .gallery h1
+        {
+            font-size: 55px;
+            text-align: center;
+        }
+        .gallery span
+        {
+            color: gold;
+        }
+        .gallery .gallery_image_box
+        {
+            /* background-color: aqua; */
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            grid-template-rows:170px 170px 170px;
+        }
+        .gallery .gallery_image_box .gallery_image
+        {
+            /* background-color: blue; */
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background: black;
+        }
+        .gallery .gallery_image_box .gallery_image img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        /* .gallery .gallery_image_box .gallery_image #img4
+        {
+            height: 60%;
+        } */
+        .gallery .gallery_image_box .gallery_image:hover img
+        {
+            opacity: 0.2;
+            transition: 0.6s;
+        }
+        .gallery .gallery_image_box .gallery_image h3
+        {
+            font-size: 35px;
+            color: gold;
+            opacity: 0;
+            margin-bottom: 130px; 
+             position: absolute; 
+            /* z-index: 5; */
+            transition: 0.3s;
+        }
+        .gallery .gallery_image_box .gallery_image:hover h3
+        {
+            opacity: 1;
+        }
+        .gallery .gallery_image_box .gallery_image p
+        {
+            color: aliceblue;
+            position: absolute;
+            width: 300px;
+            text-align: center;
+            opacity: 0;
+            transition: 0.3s;
+        }
+        .gallery .gallery_image_box .gallery_image:hover p
+        {
+            opacity: 1;
+        }
+        .gallery .gallery_image_box .gallery_image .gallery_btn
+        {
+            background: gold;
+            position: absolute;
+            /* color: black; */
+            /* text-decoration: none; */
+           padding: 5px 10px;
+           margin-top: 120px;
+           border-radius: 5px;
+           opacity: 0;
+           transition: 0.3s;
+        }
+        .gallery .gallery_image_box .gallery_image .gallery_btn a
+        {
+            color: black;
+            text-decoration: none;
+        }
+        .gallery .gallery_image_box .gallery_image:hover .gallery_btn
+        {
+            opacity: 1;
+        }
+
+
+
+
+
+         /* --------------------footer-------------- */
+         footer
+        {
+            background-color: rgb(168, 166, 166);
+            width: 98%;
+            margin-top: 100px;
+            /* margin-right: 50px; */
+        }
+
+        footer .footer_main
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            position: relative;
+            left: 50px;
+        }
+        /* footer .footer_main .footer_tag4 
+        {
+
+        } */
+        footer .footer_main .footer_tag4 i
+        {
+            font-size: 25px;
+             background-color:black; 
+            color: #fcf8f8;
+            border-radius: 50%;
+            border-width: 50px;
+            border: 4px solid black;
+        } 
+        footer .footer_main .footer_tag4 i:hover
+        {
+            color: white;
+            background-color: black;
+            transition: 0.3s;
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/005/513/590/small_2x/catering-quality-food-design-premium-logo-vector.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="food.html">home</a></li>
+                    <li><a href="food.html//#about1">about</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="review.html">Review</a></li>
+                   
+                </ul>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>    
+            
+        </header>
+    </section>
+
+
+
+
+
+    <!-- gallery -->
+    <div class="gallery">
+        <h1>Our <span>gallery</span></h1>
+        <div class="gallery_image_box">
+            <div class="gallery_image">
+                <img src="https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919-18370036-771b-4bdf-92eb-f235b2fc4a0d-0-1400x919.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqEFAviovNrNFXV4REHf93pnfLhUqMgH_zyg&usqp=CAU" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ94q_9F1WBMWsvFeeq-Yx36eJ2sv6c2Ng1rg&usqp=CAU" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img id="img4" src="https://academy-cdn.wedio.com/2022/01/food-photography-tips-wedio.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://www.peerspace.com/resources/wp-content/uploads/best-cleveland-food-photographers.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919-18370036-771b-4bdf-92eb-f235b2fc4a0d-0-1400x919.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919-18370036-771b-4bdf-92eb-f235b2fc4a0d-0-1400x919.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919-18370036-771b-4bdf-92eb-f235b2fc4a0d-0-1400x919.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+
+            <div class="gallery_image">
+                <img src="https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919-18370036-771b-4bdf-92eb-f235b2fc4a0d-0-1400x919.jpg" alt="">
+
+                <h3>Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eveniet.</p>
+                <div class="gallery_btn">
+                    <a href="">Order now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_main">
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>Sri Lanka</p>
+                <p>USA</p>
+                <p>India</p>
+                <p>Japan</p>
+                <p>Italy</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallery</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+9167899</p>
+                <p>+9156437</p>
+                <p>abcd123@gmail.com</p>
+                <p>efgh456@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy payment</p>
+                <p>24 x 7 service</p>
+            </div>
+
+            <div class="footer_tag4">
+                <h2>Follows</h2>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
